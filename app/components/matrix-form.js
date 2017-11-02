@@ -5,6 +5,7 @@ module.exports = ({size, onChangeSize}) => {
     <div>
       <form>
         <input type="text" value={size} onChange={onChangeSize}/>
+        <h1>{size}</h1>
       </form>
     </div>
   );
