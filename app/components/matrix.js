@@ -12,8 +12,8 @@ const mapStateToProps = (state) => {
 const matrixComponent = ({matrix}) => {
   return(
     <div id="matrix">
-      { matrix.map((row) => {
-          return <Row row={row} />
+      { matrix.map((row, i) => {
+          return <Row row={row} key={i.toString()} />
         })
       }
     </div>
