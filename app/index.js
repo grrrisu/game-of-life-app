@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from "react-redux";
 
-import MatrixForm from './components/matrix-form';
+import App from './components/app'
+
 import reducer from './state/reducer'
 
 const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <MatrixForm/>
+    <App/>
   </Provider>,
   document.getElementById('app')
 );
