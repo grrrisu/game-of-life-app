@@ -2,8 +2,7 @@ import { Observable } from "rxjs";
 import { dispatch } from "redux";
 
 const source =
-  Observable.timer(100, 1000)
-    .timeInterval()
+  Observable.timer(100, 2000)
     .take(3);
 
 module.exports = (store) => {
